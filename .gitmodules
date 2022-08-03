@@ -1,3 +1,0 @@
-[submodule "VPC_Creation"]
-	path = VPC_Creation
-	url = https://github.com/Marquise-Wheeler/Terraform/VPC_Creation.git
