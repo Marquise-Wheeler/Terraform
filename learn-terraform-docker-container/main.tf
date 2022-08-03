@@ -1,3 +1,5 @@
+# This file creates a t2.micro instance in us-west-2 
+
 terraform {
   required_providers {
     aws = {
