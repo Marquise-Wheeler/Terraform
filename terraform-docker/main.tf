@@ -6,7 +6,7 @@ terraform {
     }
   }
 }
-
+# PROVIDER ENTRY
 provider "docker" {}
 
 resource "docker_image" "nodered_image" {
