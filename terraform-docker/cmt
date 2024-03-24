@@ -1,0 +1,9 @@
+When I was attempting to follow the tutorial I was initially unable to connect. I then remembered that since I was not at home my IP was not the same. As a result I made a edit to the inbound rule of the security group. Connection successful.
+curl http://169.254.169.254/latest/meta-data/public-ipv4
+The above command is used to retireve the IP of the instance using the meta-data.
+=========================EOF
+
+==================
+In the case of multiple lock files the one with the highest serial is the winner.It is updated everytime.
+Lineage created when state file created originally. Deteremines if the state file is the correct one.
+terraform.tfstate file
