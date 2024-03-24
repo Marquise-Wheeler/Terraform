@@ -29,6 +29,11 @@ Reference : https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and
 
 DELETE A GIT BRANCH CLI
 "git branch -d <branch-name>"
+
+GET RID OF STALE BRANCHES
+"git remote prune origin"
+OR TO DELETE A SINGLE BRANCH
+"git branch -d -r origin/<branch-name>
 =========================
 
 =========================
