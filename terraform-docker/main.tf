@@ -29,7 +29,7 @@ resource "docker_container" "nodered_container" {
 }
 
 # CONFIGURE IP ADDRESS OUTPUT
-output "instance_ip_addr" {
+output "IP-Address" {
   value       = docker_container.nodered_container.ip_address
   description = "The private IP address of the main server instance."
 }
