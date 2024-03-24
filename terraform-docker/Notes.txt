@@ -26,6 +26,9 @@ Useful when troubleshooting variables and resources.
 3.) git branch <branchname> <tag>
 4.) git branch <branchname> <commit id>
 Reference : https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Git-Branch-Create-Example-Command-Checkout-Commit-Tag
+
+DELETE A GIT BRANCH CLI
+"git branch -d <branch-name>"
 =========================
 
 =========================
@@ -35,3 +38,15 @@ SOLUTION:
 The new branch needs to be pushed to the Remote repository using the following format:
 git push origin my_new_branch
 =========================
+=========================
+GETTING OUTPUTS
+After the tf configuration is applied we can get outputs by entering "terraform output" 
+Grep is another way to get information:
+EX.1 --> terraform show | grep ip
+EX.2 --> terraform show | grep name
+=========================
+grep -i -A4 provider .terraform.lock.hcl 
+=========================
+JOIN FUNCTION
+terraform console
+join(";", ["thing", 1])
