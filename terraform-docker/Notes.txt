@@ -70,3 +70,6 @@ ISSUE: Count can't be used to duplicate Outpputs
 The count function is used to accomplish this.
 The count function can only be used with Module, Resource and Data blocks.
 =========================
+SPLAT EXPRESSION
+https://developer.hashicorp.com/terraform/language/expressions/splat
+
