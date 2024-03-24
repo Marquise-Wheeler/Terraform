@@ -57,3 +57,6 @@ grep -i -A4 provider .terraform.lock.hcl
 JOIN FUNCTION
 terraform console
 join(";", ["thing", 1])
+=========================
+RANDOM FUNCTION
+using a cryptographic ranfom number generator will avoid collisions in naming resources.
