@@ -27,8 +27,10 @@ Useful when troubleshooting variables and resources.
 4.) git branch <branchname> <commit id>
 Reference : https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/Git-Branch-Create-Example-Command-Checkout-Commit-Tag
 
-DELETE A GIT BRANCH CLI
+DELETE A LOCAL GIT BRANCH CLI
 "git branch -d <branch-name>"
+DELETE BRANCH ON REMOTE REPO
+"git push origin --delete <branch-name>"
 
 GET RID OF STALE BRANCHES
 "git remote prune origin"

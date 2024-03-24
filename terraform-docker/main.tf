@@ -30,8 +30,8 @@ resource "docker_container" "nodered_container" {
 
 # CONFIGURE IP ADDRESS OUTPUT
 output "IP-Address" {
-  value       = docker_container.nodered_container.ip_address
-  description = "The private IP address of the main server instance."
+  value       = join(":", [docker_container.nodered_container.ip_address, docker_container.nodered_container.ports[0].external])
+  description = "The private IP address and port of node_red server instance."
 }
 
 # CONFIGUR NAME OUTPUT
