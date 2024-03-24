@@ -28,9 +28,14 @@ resource "docker_container" "nodered_container" {
   }
 }
 
-# CONFIGURE OUTPUTS
+# CONFIGURE IP ADDRESS OUTPUT
 output "instance_ip_addr" {
   value       = docker_container.nodered_container.ip_address
   description = "The private IP address of the main server instance."
 }
 
+# CONFIGUR NAME OUTPUT
+output "container-name" {
+  value       = docker_container.nodered_container.name
+  description = "The name of the container"
+}

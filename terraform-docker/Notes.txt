@@ -29,3 +29,9 @@ Reference : https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and
 =========================
 
 =========================
+ISSUE:
+New branch created via CLI not showing in remote repository.
+SOLUTION:
+The new branch needs to be pushed to the Remote repository using the following format:
+git push origin my_new_branch
+=========================
