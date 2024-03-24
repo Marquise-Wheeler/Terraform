@@ -27,3 +27,10 @@ resource "docker_container" "nodered_container" {
     external = 1880
   }
 }
+
+# CONFIGURE OUTPUTS
+output "instance_ip_addr" {
+  value       = docker_container.nodered_container.ip_address
+  description = "The private IP address of the main server instance."
+}
+
