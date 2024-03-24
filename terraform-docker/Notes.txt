@@ -1,22 +1,22 @@
-When I was attempting to follow the tutorial I was initially unable to connect. I then remembered that since I was not at home my IP was not the same. As a result I made a edit to the inbound rule of the security group. Connection successful.
+Notes.txt
+=========================
+TODO:
+This command uses curl to access the meta-data and retireve the instance IP.
 curl http://169.254.169.254/latest/meta-data/public-ipv4
-The above command is used to retireve the IP of the instance using the meta-data.
-=========================EOF
-
+=========================
+ISSUE:
+When I was attempting to follow the tutorial I was initially unable to connect. I then remembered that since I was not at home my IP was not the same. As a result I made a edit to the inbound rule of the security group. Connection successful.
 ==================
 In the case of multiple lock files the one with the highest serial is the winner.It is updated everytime.
 Lineage created when state file created originally. Deteremines if the state file is the correct one.
 terraform.tfstate file
 =======================
+TODO:
 Install jq 
-spt install jq
- cat  >> cmt <<EOF
-=======================
-Install jq 
-spt install jq
 apt install jq
 jq allows us to see alll the attributes in the state file without accessing it directly
 =======================
 An alternate way to access the state information is to use the "terraform state list" command.
 Show us all of the resources in our state.
 Useful when troubleshooting variables and resources.
+====================
