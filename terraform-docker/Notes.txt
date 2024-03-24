@@ -60,3 +60,4 @@ join(";", ["thing", 1])
 =========================
 RANDOM FUNCTION
 using a cryptographic ranfom number generator will avoid collisions in naming resources.
+https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string.html=========================
