@@ -87,4 +87,20 @@ Error: Invalid function argument
 │ Invalid value for "lists" parameter: element 0: string required.
 =========================
 FOR EXPRESSIONS
+[for i in  docker_container.nodered_container[*]: join(":", [i.ip_address]    ,i.ports[*]["external"])] 
+OUTPUT:
+utputs:
+
+container-name = [
+  "nodered-g0up",
+  "nodered-2nzh",
+]
+ip-address = [
+  "172.17.0.3:32769",
+  "172.17.0.2:32768",
+]
+=========================
+TAINTING
+Forces a resource to be destroyed so it can be reapplied.
+Most commonly used when a config needs to be reapplied equal to rebooting(restrtinga daemon).
 
