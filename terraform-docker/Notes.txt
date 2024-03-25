@@ -72,4 +72,19 @@ The count function can only be used with Module, Resource and Data blocks.
 =========================
 SPLAT EXPRESSION
 https://developer.hashicorp.com/terraform/language/expressions/splat
+we are using the splat expression to duplicate our outputs. This will enable us to scale when there is a large number of outputs that need to be configured.
+The final result will be one output that handles all of our resources.
+The splat expression can not be used with tuples due to their immutability. The IP address output use a tuple and will produce the following error.
+ERROR:
+Error: Invalid function argument
+│ 
+│   on main.tf line 44, in output "ip-address1":
+│   44:   value       = join(":", [docker_container.nodered_container[*].ip_address, docker_container.nodered_container[*].ports[0].external])
+│     ├────────────────
+│     │ while calling join(separator, lists...)
+│     │ docker_container.nodered_container is tuple with 2 elements
+│ 
+│ Invalid value for "lists" parameter: element 0: string required.
+=========================
+FOR EXPRESSIONS
 
