@@ -110,3 +110,8 @@ Any resource dependencies may cause the resource to be deleted.
 
 Issue terraform untainted to reverse the changes.
 =========================
+HOW TO FIX A CORRUPT LOCKING STATE
+
+
+
+=========================
