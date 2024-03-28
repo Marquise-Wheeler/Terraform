@@ -103,4 +103,10 @@ ip-address = [
 TAINTING
 Forces a resource to be destroyed so it can be reapplied.
 Most commonly used when a config needs to be reapplied equal to rebooting(restrtinga daemon).
+What is tainting?
+When should we use tainting?
+Terraform taint is the command. 
+Any resource dependencies may cause the resource to be deleted. 
 
+Issue terraform untainted to reverse the changes.
+=========================
