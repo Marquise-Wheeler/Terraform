@@ -115,3 +115,12 @@ HOW TO FIX A CORRUPT LOCKING STATE
 
 
 =========================
+docker ps -a   ---> View the containers running. Helpful when diagnosing state issues.
+terraform state list    --> Shows which resources are being tracked by the state file.
+terraform output        --> Shows the same info configured by the outputs with identifying info
+docker rm -f <container> ---> To cleanup leftover resources. Destroy/Docker rm -f/Destroy is the sequence.
+=========================
+ADD UNTRACKED RESOURCE TO STATE FILE
+Use terraform import docs
+The import docs use the Bash script Docker Inspect to return the Container ID that is needed to add the untracked resource.
+=========================
