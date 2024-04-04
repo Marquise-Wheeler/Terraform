@@ -11,7 +11,10 @@ terraform {
 
 provider "docker" {}
 
-variable "ext_port" {}
+variable "ext_port" {
+type = number
+default = 1880
+}
 
 # download nodered image
 resource "docker_image" "nodered_image" {
