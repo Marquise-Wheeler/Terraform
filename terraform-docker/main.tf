@@ -11,6 +11,8 @@ terraform {
 
 provider "docker" {}
 
+variable "ext_port" {}
+
 # download nodered image
 resource "docker_image" "nodered_image" {
   name = "nodered/node-red:latest"
@@ -31,7 +33,7 @@ resource "docker_container" "nodered_container" {
   image = docker_image.nodered_image.latest
   ports {
     internal = 1880
-   # external = 1880
+    external = var.ext_port
   }
 }
 
